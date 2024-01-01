@@ -1,3 +1,6 @@
+:root{
+	--menu_height: 20px;
+}
 header{
 	position:sticky;
 	top:0;
@@ -21,18 +24,45 @@ body{
 }
 
 nav ul li{             
-	background-color: #20A1A1; 
+	height:var(--menu_height);
+	background-color: #22aaaa;
+	padding: 0px;
+	margin: 0px;
 	list-style-type: none;
 	border-top: 1px solid #ffffff;
 	border-left: 1px solid #ffffff;
-	border-bottom: 1px solid #888888;
-	border-right: 1px solid #aaaaaa;
+	border-bottom: 2px solid #000000;
+	border-right: 2px solid #000000;
+
+	display:inline;
+	float:left;
 }                            
 
 #id_menu_window{
-	background-color: #20a1a1;
+	height:40px;
+	background-color: #22aaaa;
+	margin:0px;
+	padding: 0px;
+	border: 0px;
 }
 
 nav ul a:hover{
-	background-color: #ffff99;
+	height:var(--menu_height);
+	background-color: #ffaaaa;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-bottom: 3px solid #000000;
+	border-right: 1px solid #000000;
 }
+
+nav{
+	margin:0px;
+	padding: 0px;
+	border: 0px;
+	margin: 0;
+	padding: 0;
+}
+
