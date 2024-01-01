@@ -37,7 +37,6 @@ nav ul li{
 	display:inline;
 	float:left;
 }                            
-
 #id_menu_window{
 	height:40px;
 	background-color: #22aaaa;
@@ -45,24 +44,6 @@ nav ul li{
 	padding: 0px;
 	border: 0px;
 }
-
 nav ul a:hover{
-	height:var(--menu_height);
 	background-color: #ffaaaa;
-	padding: 0px;
-	margin: 0px;
-	list-style-type: none;
-	border-top: 1px solid #ffffff;
-	border-left: 1px solid #ffffff;
-	border-bottom: 3px solid #000000;
-	border-right: 1px solid #000000;
 }
-
-nav{
-	margin:0px;
-	padding: 0px;
-	border: 0px;
-	margin: 0;
-	padding: 0;
-}
-
