@@ -20,6 +20,19 @@ body{
 	margin-bottom: 50px;
 }
 
-#id_menu_window{             
-	background-color: #A1A1A1; 
+nav ul li{             
+	background-color: #20A1A1; 
+	list-style-type: none;
+	border-top: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+	border-bottom: 1px solid #888888;
+	border-right: 1px solid #aaaaaa;
 }                            
+
+#id_menu_window{
+	background-color: #20a1a1;
+}
+
+nav ul a:hover{
+	background-color: #ffff99;
+}
