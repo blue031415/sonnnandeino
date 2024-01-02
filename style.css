@@ -1,15 +1,17 @@
 :root{
 	--menu_height: 20px;
 }
-header{
+header{/*ヘッダの表示*/
 	position:sticky;
 	top:0;
-	padding: -1rem ;
+	padding: 0rem ;
+	margin: 0rem;
+	border: 0rem;
 	align-items:center;
 	background-color: #99eddd; 
 }
 
-footer{
+footer{/*フッタの表示*/
 	position: absolute;
 	bottom:0;
 	left:0;
@@ -20,23 +22,21 @@ footer{
 }
 
 
-nav ul li{             
+nav ul li{/*メニューリストの表示*/
 	height:var(--menu_height);
 	width:100px;
 	background-color: #22aaaa;
-	padding: 0px;
-	margin: 0px;
 	list-style-type: none;
-	border-top: 1px solid #ffffff;
+	border-top: 1px solid #ffffff;/*ボタンぽい見た目に*/
 	border-left: 1px solid #ffffff;
 	border-bottom: 2px solid #000000;
 	border-right: 2px solid #000000;
 
-	display:inline;
-	float:left;
+	display:inline;/*リストを横並びに*/
+	float:left;/*これがないとなんかうまくいかない*/
 }                            
 
-nav ul li:hover{
+nav ul li:hover{/*カーソルを乗せたときの動き*/
 	background-color: #008888;
 	border-top: 2px solid #000000;
 	border-left: 2px solid #000000;
@@ -44,14 +44,17 @@ nav ul li:hover{
 	border-right: 1px solid #ffffff;
 }
 nav ul li a{
-	text-decoration: none;
-	display: block;
+	-webkit-user-drag:none;/*ドラッグ不可*/
+	text-decoration: none;/*テキストの下線を無効か*/
+	display: block;/*当たり判定をボタンに*/
+	color:#000000;
+}
+nav ul li a:active{/*メニュークリック時の動き*/
+	color:#ffffff;
 }
 
-#id_menu_window{
+#id_menu_window{/*メニューウィンドの表示*/
 	height:40px;
 	background-color: #22aaaa;
-	margin:0px;
-	padding: 0px;
 	border: 0px;
 }
