@@ -19,9 +19,6 @@ footer{
 	background: #aaaabb
 }
 
-body{
-	margin-bottom: 50px;
-}
 
 nav ul li{             
 	height:var(--menu_height);
@@ -39,16 +36,16 @@ nav ul li{
 	float:left;
 }                            
 
-nav ul li a{
-	text-decoration: none;
-	display: block;
-}
 nav ul li:hover{
 	background-color: #008888;
 	border-top: 2px solid #000000;
 	border-left: 2px solid #000000;
 	border-bottom: 1px solid #ffffff;
 	border-right: 1px solid #ffffff;
+}
+nav ul li a{
+	text-decoration: none;
+	display: block;
 }
 
 #id_menu_window{
