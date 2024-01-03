@@ -58,3 +58,10 @@ nav ul li a:active{/*メニュークリック時の動き*/
 	background-color: #22aaaa;
 	border: 0px;
 }
+#main{
+	
+	border-top: 2px solid #000000;
+	border-left: 2px solid #000000;
+	border-bottom: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+}
