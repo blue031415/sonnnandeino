@@ -1,10 +1,12 @@
 :root{
 	--menu_height: 20px;
+	--footer_height: 50px;
 }
+
 header{/*ヘッダの表示*/
 	position:sticky;
-	top:0;
-	padding: 0rem ;
+	margin-top: 0px;/*ヘッダの上部の余白を消そうと思ったが目に見える変化なし。*/
+	padding: 0rem;
 	margin: 0rem;
 	border: 0rem;
 	align-items:center;
@@ -12,11 +14,10 @@ header{/*ヘッダの表示*/
 }
 
 footer{/*フッタの表示*/
-	position: absolute;
-	bottom:0;
+	position: sticky;/*常にfooterを表示させたいわけではないので画面外absoluteではなくstickyにしてみた*/
 	left:0;
 	width:100%;
-	height:50px;
+	height:var(--footer_height);
 	margin:0;
 	background: #aaaabb
 }
@@ -32,6 +33,7 @@ nav ul li{/*メニューリストの表示*/
 	border-bottom: 2px solid #000000;
 	border-right: 2px solid #000000;
 
+	margin-left: 0px;/*ボタンの左側に余白が消えたらいいなと思って追加したがだめ。ここの値を設定するとボタンの間に余白が確認できた。ボタン間の余白はいらないと思うが宣言することでしっかり定義できると思ったのでのこした*/
 	display:inline;/*リストを横並びに*/
 	float:left;/*これがないとなんかうまくいかない*/
 }                            
@@ -54,7 +56,18 @@ nav ul li a:active{/*メニュークリック時の動き*/
 }
 
 #id_menu_window{/*メニューウィンドの表示*/
-	height:40px;
+	height:50px;/*スクロールがいったん邪魔だから消すために広くした*/
+	margin-top: 0px;
 	background-color: #22aaaa;
 	border: 0px;
+}
+
+#id_main_window{/*メインウィンドウのCSSをこちらに移植*/
+	width: 100%;
+	height: auto;/*自動でheightを設定してくれるはず*/
+	min-height: 800px;/*ここでメインフレームの最小のheightを定める*/
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: right;
 }
