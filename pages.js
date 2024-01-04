@@ -3,8 +3,9 @@ let maincontents = document.getElementsByClassName("class_maincontents")
 let btn_main = document.getElementById("mainpage_btn");
 let btn_calendar = document.getElementById("calendar_btn");
 let btn_book = document.getElementById("bookshell_btn");
-let btn_rental = document.getElementById("bookshell_btn");
-	for(let i = 0;i < maincontents.length;i++){
+let btn_rental = document.getElementById("rental_btn");
+let btn_livings = document.getElementById("livings_btn");
+	for(let i = 1;i < maincontents.length;i++){
 		maincontents[i].style.display = "none";
 	}
 
@@ -32,4 +33,10 @@ btn_rental.addEventListener("click",()=>{
 		maincontents[i].style.display = "none";
 	}
 	maincontents[3].style.display = "block";
+});
+btn_livings.addEventListener("click",()=>{
+	for(let i = 0;i < maincontents.length;i++){
+		maincontents[i].style.display = "none";
+	}
+	maincontents[4].style.display = "block";
 });

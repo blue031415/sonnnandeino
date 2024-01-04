@@ -12,7 +12,7 @@ header{/*ヘッダの表示*/
 }
 
 footer{/*フッタの表示*/
-	position: absolute;
+	position: sticky;
 	bottom:0;
 	left:0;
 	width:100%;
@@ -21,10 +21,14 @@ footer{/*フッタの表示*/
 	background: #aaaabb
 }
 
+nav ul{
+	background-color: #99eedd;
+	margin:0px;
+}
 
 nav ul li{/*メニューリストの表示*/
 	height:var(--menu_height);
-	width:100px;
+	width:150px;
 	background-color: #22aaaa;
 	list-style-type: none;
 	border-top: 1px solid #ffffff;/*ボタンぽい見た目に*/
@@ -54,14 +58,14 @@ nav ul li a:active{/*メニュークリック時の動き*/
 }
 
 #id_menu_window{/*メニューウィンドの表示*/
-	height:40px;
+	height:20px;
 	background-color: #22aaaa;
 	border: 0px;
 }
 #main{
-	
+	width:100%;
 	border-top: 2px solid #000000;
 	border-left: 2px solid #000000;
-	border-bottom: 1px solid #ffffff;
-	border-right: 1px solid #ffffff;
+	border-bottom: 2px solid #000000;
+	border-right: 2px solid #000000;
 }

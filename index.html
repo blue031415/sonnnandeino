@@ -4,41 +4,75 @@
 	<meta charset = "UTF-8">
 	<title>みんなの庭</title>
 	<link  rel="stylesheet" href="style.css">
+	<link  rel="stylesheet" href="calendar.css">
 </head>
 
 <body>
 	<header>
 		<div id="id_header">
 			<h1>みんなの庭である</h1>
+			<nav id="menu_window">
+				<ul>
+					<li>
+						<a id="mainpage_btn">めいんぺーじ</a>
+					</li>
+					<li>
+						<a id="calendar_btn">かれんだー</a>
+					</li>
+					<li>
+						<a id="bookshell_btn">本棚</a>
+					</li>
+					<li>
+						<a id="rental_btn">貸し出し</a>
+					</li>
+					<li>
+						<a id="livings_btn">生息しているもの</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-	<nav id="menu_window">
-		<ul>
-			<li>
-				<a id="mainpage_btn">めいんぺーじ</a>
-			</li>
-			<li>
-				<a id="calendar_btn">かれんだー</a>
-			</li>
-			<li>
-				<a id="bookshell_btn">本棚</a>
-			</li>
-		</ul>
-	</nav>
 	</header>
 <br>
-	<div id="main" border="1px solid #000000" >
-		<div  class="class_maincontents"id="id_mainpage">
-			<p>hello world</p>
-		</div>
-		<div class="class_maincontents"id="id_calendar">
-			<div id = "calendar" class = "calendar-wrap"></div>
-			<script src="calendar.js"></script>
-		</div>
-		<div class="class_maincontents"id="id_bookshell">
-			<p>ほんだな</p>
-		</div>
-		<div id="id_rental">
-			<p>karimono</p>
+	<div id="mainwindow">
+		<div id="main" border="1px solid #000000" >
+
+			<div  class="class_maincontents"id="id_mainpage">
+				<p>hello world</p>
+			</div>
+
+			<div class="class_maincontents"id="id_calendar">
+				<div id = "calendar" class = "calendar-wrap"></div>
+				<script src="calendar.js"></script>
+			</div>
+
+			<div class="class_maincontents"id="id_bookshell">
+			<ul>
+				<li>
+					じゅじゅつかいせん0~24
+				</li>
+				<li>
+					数學概論
+				</li>
+			</ul>
+			</div>
+
+			<div class="class_maincontents" id="id_rental">
+				<p>karimono</p>
+			</div>
+
+			<div class="class_maincontents" id="id_livings">
+				<ul>
+					<li>
+						おおきいくま
+					</li>
+					<li>
+						ちいさいくま
+					</li>
+					<li>
+						めっし
+					</li>
+				</ul> 
+			</div>
 		</div>
 	</div>
 	<footer >
